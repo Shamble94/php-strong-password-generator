@@ -26,7 +26,11 @@ if (isset($_GET["lunghezza"]) && isset($_GET["lunghezza"]) != ""){
                 </form>
             </div>
             <div>
-                <?php echo "La password generata è : $password " ?>
+
+                <?php  if(isset($lenght)){ ?>
+                <?php echo "La tua password è: $password" ?> 
+                
+                <?php } ?>
             </div>
         </div>
     </div>
